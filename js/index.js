@@ -12,6 +12,7 @@ function validateForm() {
     if (!email.match(emailPattern)) {
         alert('Please enter a valid email address.');
         return false;
+        
     }
 
     if (!phone.match(phonePattern)) {
@@ -20,7 +21,7 @@ function validateForm() {
     }
 
     sendToWhatsApp();
-    window.location.href = "thanks.html";
+    window.location.href = "/html/thanks.html";
     return false;
 }
 function sendToWhatsApp() {
