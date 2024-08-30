@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="video-section">
+            <video controls>
+                <source src="assets/vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button id="showFormBtn" class="btn btn-primary mt-4">Contact Us</button>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section bg-primary text-white" id="formContainer">
+            <h2 class="text-center">Contact Us</h2>
+            <form id="contactForm" action="thanks.html" method="POST" onsubmit="return validateForm()">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="query" class="form-label">Query</label>
+                    <textarea class="form-control" id="query" name="query" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>

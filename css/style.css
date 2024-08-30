@@ -1,0 +1,30 @@
+* {
+    font-family: Arial, sans-serif;
+    /* background-color: #f8f9fa; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.video-section {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+.video-section video {
+    max-width: 100%;
+    height: auto;
+}
+.form-section {
+    display: none;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+.thank-you {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+}
